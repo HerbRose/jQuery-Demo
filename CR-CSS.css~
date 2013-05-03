@@ -1,0 +1,59 @@
+#content{
+   width : 750px;
+   height : 1000px;
+}
+img#content{  
+    display: block;   
+   margin-left: auto;  
+  margin-right: auto;
+  margin-top : 150
+  
+ }
+h2{
+   color : Red;
+   background : url(open.png) no-repeat 0 11px;
+   position:absolute;
+   cursor:pointer;
+   padding: 10px 0 0 25px;
+   font-style : italic;
+}
+h2.close {
+	background-image: url(close.png);
+}
+
+p{
+   font-size:12pt;
+  }
+.language{
+    color : red;
+}
+#end{
+   font-style: italic;
+}
+
+
+}
+#logo{
+    position:absolute;
+	top:290px;
+	right:50px;
+}
+.main{
+    font-weight : bold;
+	line-height: 100%;
+	margin-left: 25px;
+	
+}
+.bio{
+   top:300px;
+   left:50px;
+   right: 150px;
+   bottom:200px;
+   
+}
+.main{
+   margin-top:20px;
+}
+.intro{
+   position:absolute;
+}

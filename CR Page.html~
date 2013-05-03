@@ -1,0 +1,66 @@
+<html>
+<head>
+<title> CR Page </title>
+<link rel="stylesheet" type="text/css" href="CR-CSS.css">
+<link rel="stylesheet" type="text/css" href="logincss.css">
+<script src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+      $('#open').click(function(){
+         $('#login form').slideToggle(300);
+         $(this).toggleClass('close');
+        }) // end of click function
+});// end of ready function
+</script>
+<script>
+   $(document).ready(function(){
+      $('.main').hide();
+      $('.bio h2').toggle(
+	       function(){ 
+			  $(this).next('.main').slideDown();
+			  $(this).addClass('close');
+		   },
+		   function(){
+			 $(this).next('.main').fadeOut();
+			 $(this).removeClass('close');
+		   })    
+   });//End of ready function
+</script>
+</head>
+<body background="DarkGray.jpg" bgproperties="fixed">
+
+<div id="login">
+<p id="open">Login</p>
+<form>
+	<p>
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username">
+	</p>
+	<p>
+		<label for="password">Password: </label>
+		<input type="text" name="password" id="password">
+	</p>
+	<p>
+		<input type="submit" name="button" id="button" value="Submit" >
+	</p>
+</form>
+</div>
+<div class="bio">
+  <h2 id="intro"> Introduction: </h2>
+    <div id="introduction" class="main"></br></br></br>
+    <p>I am the the student of Devi Ahilya University.</br>
+    I am a Software Developer & Web Designer.</br>
+    I have knowledge of C, C++, Java, Visual Basic,
+    Python,</br> HTML, CSS, JavaScript & Jquery, Basic Php.</br>
+    And have made a Software of  "Canteen Management System"</br> for the graduation.</br>
+    And learning <span class='language'>CSS</span> in order to understand <span class='language'>JQuery</span>'s functionality</br>
+    <p id ="end">I have also completed online course of <br>
+1) Toronto University on Python and got 99.4% .</br> 
+2) University of washington's Computer network, Scored 95%</p>
+	</p>
+  </div>
+
+</div>
+
+</body>
+</html>
